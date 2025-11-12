@@ -1,25 +1,70 @@
-# 💬 WebSocket Room-based Broadcasting 
+# 🔗 WebSocket Broadcast Server
 
-
-This project demonstrates **room-based broadcasting using WebSockets** — when a client joins a specific room and sends a message, it is delivered **only to other clients in the same room**.  
-Clients in different rooms remain completely isolated and do not receive each other’s messages.  
-
-This is a great starting point for learning **real-time chat systems, multiplayer lobbies, and collaborative apps**.
-
-
-
-## 🚀 Features
-- 🔸 Join and leave specific rooms  
-- 🔸 Broadcast messages only within the same room  
-- 🔸 Built with Node.js and the `ws` library  
-- 🔸 Lightweight, fast, and easy to extend  
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-18+-green?logo=node.js" alt="Node.js" />
+  <img src="https://img.shields.io/badge/TypeScript-Latest-blue?logo=typescript" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/WebSocket-%F0%9F%94%97%20Real--Time-lightgrey" alt="WebSocket" />
+  <img src="https://img.shields.io/github/license/<your-username>/websocket-broadcast-server?color=blue" alt="License" />
+  <img src="https://img.shields.io/github/stars/<your-username>/websocket-broadcast-server?style=social" alt="Stars" />
+</p>
 
 ---
 
-## ⚙️ How It Works
-1. A client connects to the WebSocket server.  
-2. The client sends a `join` event with the room name (e.g., `"room-123"`).  
-3. When a client sends a `message`, it is **broadcast only to users in the same room**.  
-4. Clients in other rooms never receive it — ensuring perfect room isolation.  
+## 🧩 Overview
+
+The **WebSocket Broadcast Server** is a minimal real-time server built using **Node.js** and the **`ws`** library.  
+It allows multiple users to connect and **broadcast messages to all connected clients instantly** — making it perfect for chat apps, live notifications, or collaborative tools.
+
+---
+
+## ⚡ Features
+
+- 🔁 **Real-time Broadcasting:** Sends every message to all connected clients  
+- 🌐 **Multiple Clients Supported:** Connect from browser, Postman, or any WebSocket client  
+- 🧠 **Simple & Lightweight:** Only uses `ws` (no external frameworks)  
+- 🧱 **TypeScript Support:** Fully typed for reliability and safety  
+- 🧹 **Automatic Cleanup:** Removes disconnected clients from memory  
+
+---
+
+## 🧰 Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| 🟢 **Node.js** | Runtime environment for server-side JS |
+| 🟦 **TypeScript** | Type-safe JavaScript for clean code |
+| 🔌 **ws** | WebSocket library for Node.js |
+| 🧪 **Postman / WebSocket King** | For testing real-time communication |
 
 
+---
+
+
+🏗️ Project Setup
+1️⃣ Clone the Repository
+git clone https://github.com/<your-username>/websocket-broadcast-server.git
+cd websocket-broadcast-server
+
+2️⃣ Install Dependencies
+npm install ws
+
+3️⃣ Run the Server
+
+For JavaScript:
+
+node index.js
+
+
+For TypeScript:
+
+ts-node index.ts
+
+
+The server runs at 👉 ws://localhost:8081
+
+
+ ---
+ 
+⭐ Support
+
+If you found this project helpful, please star ⭐ the repository — it motivates me to build more awesome stuff!
